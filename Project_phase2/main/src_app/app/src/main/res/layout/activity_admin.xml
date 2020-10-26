@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="@dimen/activityPadding"
+  tools:context=".Admin">
+
+  <TextView
+    android:id="@+id/employeeIdPrompt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="15dp"
+    android:text="@string/adminPromotePrompt"
+    android:textSize="@dimen/textViewTextSize" />
+
+  <EditText
+    android:id="@+id/employeeIdEntry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="15dp"
+    android:layout_toRightOf="@id/employeeIdPrompt"
+    android:hint="@string/adminPromoteHint"
+    android:inputType="text"
+    android:textSize="20dp" />
+
+  <Button
+    android:id="@+id/promoteEmployeeButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@id/employeeIdEntry"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="-54dp"
+    android:text="@string/adminPromoteBtn" />
+
+  <TextView
+    android:id="@+id/viewSalesData"
+    android:layout_width="match_parent"
+    android:layout_height="390dp"
+    android:layout_below="@id/promoteEmployeeButton"
+    android:layout_marginTop="75dp"
+    android:scrollbars="vertical"
+    android:textSize="@dimen/textViewTextSize" />
+
+  <Button
+    android:id="@+id/viewSalesBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/viewSalesData"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="-451dp"
+    android:text="@string/adminViewSalesBtn"
+    android:layout_marginLeft="100dp"/>
+
+  <Button
+    android:id="@+id/exitBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/viewSalesBtn"
+    android:layout_below="@id/viewSalesData"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="-451dp"
+    android:text="@string/exitBtn" />
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="@dimen/activityPadding"
+  tools:context=".Activity.Admin.Admin">
+
+  <TextView
+    android:id="@+id/employeeIdPrompt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="15dp"
+    android:text="@string/adminPromotePrompt"
+    android:textSize="@dimen/textViewTextSize" />
+
+  <EditText
+    android:id="@+id/employeeIdEntry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="15dp"
+    android:layout_toRightOf="@id/employeeIdPrompt"
+    android:hint="@string/adminPromoteHint"
+    android:inputType="text"
+    android:textSize="20dp" />
+
+  <Button
+    android:id="@+id/promoteEmployeeButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@id/employeeIdEntry"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="-54dp"
+    android:text="@string/adminPromoteBtn"
+    app:icon="@drawable/ic_supervisor_account_black_24dp" />
+
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/couponCodePrompt"
+    android:layout_below="@id/promoteEmployeeButton"
+    android:layout_marginTop="70dp"
+    android:inputType="text"
+    android:id="@+id/couponCodePrompt" />
+
+  <Spinner
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:entries="@array/couponTypeArray"
+    android:prompt="@string/couponTypePrompt"
+    android:layout_below="@id/couponCodePrompt"
+    android:id="@+id/couponTypeEntry"
+    android:layout_marginTop="20dp"
+    android:spinnerMode="dialog" />
+
+  <EditText
+    android:inputType="numberDecimal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/couponDiscountPrompt"
+    android:layout_below="@id/couponTypeEntry"
+    android:layout_marginTop="20dp"
+    android:id="@+id/couponDiscountEntry" />
+
+  <EditText
+    android:inputType="number"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/couponItemIdPrompt"
+    android:layout_below="@id/couponDiscountEntry"
+    android:layout_marginTop="20dp"
+    android:id="@+id/couponItemIdEntry" />
+
+  <EditText
+    android:inputType="number"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/couponQuantityPrompt"
+    android:layout_below="@id/couponItemIdEntry"
+    android:layout_marginTop="20dp"
+    android:id="@+id/couponQuantityEntry" />
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/addCouponBtn"
+    android:layout_below="@id/couponQuantityEntry"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/addCouponBtn"
+    app:icon="@drawable/ic_local_offer_black_24dp" />
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/viewBooksBtn"
+    android:layout_below="@id/addCouponBtn"
+    android:id="@+id/viewBooksBtn"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="50dp"
+    app:icon="@drawable/ic_library_books_black_24dp" />
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/logout"
+    android:layout_toRightOf="@id/viewBooksBtn"
+    android:layout_below="@id/addCouponBtn"
+    android:id="@+id/adminLogoutBtn"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp"
+    app:icon="@drawable/ic_exit_to_app_black_24dp" />
+</RelativeLayout>

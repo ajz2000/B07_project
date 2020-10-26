@@ -1,0 +1,2 @@
+Our android application works best on the Pixel 2, and the initilization screen
+is only shown if the database is empty.

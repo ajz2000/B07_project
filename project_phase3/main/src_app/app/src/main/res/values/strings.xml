@@ -1,0 +1,76 @@
+<resources>
+
+  <string-array name="roleArrays">
+    <item>Admin</item>
+    <item>Employee</item>
+    <item>Customer</item>
+  </string-array>
+
+  <string-array name="couponTypeArray">
+    <item>Percentage</item>
+    <item>Price</item>
+  </string-array>
+
+  <string name="appName">CSCB07 App</string>
+  <string name="loginMenuIdHint">User Id</string>
+  <string name="loginMenuPasswordHint">Password</string>
+  <string name="loginMenuLoginPrompt">Login</string>
+  <string name="adminPromoteHint">Employee Id</string>
+  <string name="adminPromotePrompt">Promote Employee:</string>
+  <string name="adminPromoteBtn">Promote Employee</string>
+  <string name="employeeMenuNewUserBtn">Make New User</string>
+  <string name="employeeMenuNewAccountBtn">Make New Account</string>
+  <string name="employeeMenuNewEmployeeBtn">Make New Employee</string>
+  <string name="restockInventoryBtn">Restock Inventory</string>
+  <string name="exitBtn">Exit</string>
+  <string name="employeeMenuOptions">Please Choose An Option</string>
+  <string name="createUserNameHint">Full Name</string>
+  <string name="createUserAgeHint">Age</string>
+  <string name="createUserAddressHint">Address</string>
+  <string name="createUserBtn">Create User</string>
+  <string name="createEmployeeBtn">Create Employee</string>
+  <string name="itemIdHint">Item Id</string>
+  <string name="quantityHint">Quantity</string>
+  <string name="userIdHint">Customer Id</string>
+  <string name="makeAccountBtn">Make Account</string>
+  <string name="loginRoleNamePrompt">Select Your Role</string>
+  <string name="authenticateBtn">Authenticate Employee</string>
+  <string name="createAdminBtn">Create Admin</string>
+  <string name="plus">+</string>
+  <string name="minus">-</string>
+  <string name="inputID">Item ID</string>
+  <string name="inputAmount">Item Quantity</string>
+  <string name="checkout">Checkout</string>
+  <string name="logout">Logout</string>
+  <string name="couponCodePrompt">Coupon Code</string>
+  <string name="couponDiscountPrompt">Discount</string>
+  <string name="couponItemIdPrompt">Item Id</string>
+  <string name="couponQuantityPrompt">Quantity</string>
+  <string name="viewBooksBtn">View Books</string>
+  <string name="couponTypePrompt">Select Coupon Type</string>
+  <string name="addCouponBtn">Add Coupon</string>
+
+  <string name="adminMenuViewHistoricAccounts">View Historic Accounts</string>
+  <string name="adminMenuViewActiveAccounts">View Active Accounts</string>
+  <string name="adminMenuSaveData">Save Application Data</string>
+  <string name="adminMenuLoadData">Load Application Data</string>
+  <string name="adminMenuCreateCoupon">Create Coupon</string>
+  <string name="viewHistoricAccountsBtn">View Historic Accounts</string>
+  <string name="viewHistoricAccountsPrompt">Historic Accounts:</string>
+  <string name="viewActiveAccountsBtn">View Active Accounts</string>
+  <string name="viewActiveAccountsPrompt">Active Accounts:</string>
+
+  <string name="saveAppDataPrompt">App Data:</string>
+  <string name="saveAppDataBtn">Save Data</string>
+  <string name="saveAppDataHint">File Name (Omit Trailing Slash)</string>
+
+  <string name="loadAppDataBtn">Load Data</string>
+
+  <string name="itemOneName">FISHING_ROD</string>
+  <string name="itemTwoName">HOCKEY_STICK</string>
+  <string name="itemThreeName">SKATES</string>
+  <string name="itemFourName">RUNNING_SHOES</string>
+  <string name="itemFiveName">PROTEIN_BAR</string>
+
+  <string name="checkOutBtn">Check Price</string>
+</resources>

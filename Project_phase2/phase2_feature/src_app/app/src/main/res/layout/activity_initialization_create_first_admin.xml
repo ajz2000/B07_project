@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitializationCreateFirstAdmin"
+    android:padding="@dimen/activityPadding">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/createUserNameHint"
+        android:layout_marginTop="40dp"
+        android:id="@+id/nameEntry"
+        android:layout_below="@+id/goBackButton"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/createUserAgeHint"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ageEntry"
+        android:layout_below="@+id/nameEntry"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/createUserAddressHint"
+        android:layout_marginTop="20dp"
+        android:id="@+id/addressEntry"
+        android:layout_below="@+id/ageEntry"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/loginMenuPasswordHint"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:id="@+id/passwordEntry"
+        android:layout_below="@+id/addressEntry"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createAdminBtn"
+        android:layout_below="@id/passwordEntry"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

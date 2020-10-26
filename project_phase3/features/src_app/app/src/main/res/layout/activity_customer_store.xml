@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Activity.Customer.CustomerStore"
+  android:padding="@dimen/activityPadding">
+
+  <ScrollView
+    android:id="@+id/shoppingCartView"
+    android:layout_width="match_parent"
+    android:layout_height="380dp">
+
+    <LinearLayout
+      android:id="@+id/inventoryItems"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:id="@+id/singleItem1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+          android:id="@+id/item1"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="@string/itemOneName"
+          android:textSize="24sp" />
+
+        <TextView
+          android:paddingLeft="70dp"
+          android:id="@+id/item1ID"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="ID: 1"
+          android:textSize="24sp" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/singleItem2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+          android:id="@+id/item2"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="@string/itemTwoName"
+          android:textSize="24sp" />
+
+        <TextView
+          android:paddingLeft="70dp"
+          android:id="@+id/item2ID"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="ID: 2"
+          android:textSize="24sp" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/singleItem3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+          android:id="@+id/item3"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="@string/itemThreeName"
+          android:textSize="24sp" />
+
+        <TextView
+          android:paddingLeft="70dp"
+          android:id="@+id/item3ID"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="ID: 3"
+          android:textSize="24sp" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/singleItem4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+          android:id="@+id/item4"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="@string/itemFourName"
+          android:textSize="23sp" />
+
+        <TextView
+          android:paddingLeft="70dp"
+          android:id="@+id/item4ID"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="ID: 4"
+          android:textSize="24sp" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/singleItem5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+          android:id="@+id/item5"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="@string/itemFiveName"
+          android:textSize="23sp" />
+
+        <TextView
+          android:paddingLeft="70dp"
+          android:id="@+id/item5ID"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="ID: 5"
+          android:textSize="24sp" />
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+
+  <LinearLayout
+    android:id="@+id/middlePanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/bottomPanel"
+    android:layout_below="@id/shoppingCartView"
+    android:orientation="vertical">
+
+    <EditText
+      android:id="@+id/customerStoreItemId"
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1"
+      android:hint="@string/inputID"
+      android:inputType="number"></EditText>
+
+    <EditText
+      android:id="@+id/customerStoreItemQuantity"
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1"
+      android:hint="@string/inputAmount"
+      android:inputType="number"></EditText>
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/bottomPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp">
+
+    <ImageButton
+      android:id="@+id/customerStoreAddToCartBtn"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:src="@drawable/ic_add_shopping_cart_black_24dp"
+      android:backgroundTint="@color/colorPrimary" />
+
+    <ImageButton
+      android:id="@+id/customerStoreViewCartBtn"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:src="@drawable/ic_shopping_cart_black_24dp"
+      android:backgroundTint="@color/colorPrimary" />
+
+    <ImageButton
+      android:id="@+id/customerStoreLogoutBtn"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:src="@drawable/ic_exit_to_app_black_24dp"
+      android:backgroundTint="@color/colorPrimary" />
+  </LinearLayout>
+</RelativeLayout>

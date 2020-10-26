@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Activity.Employee.EmployeeMakeUser"
+  android:padding="@dimen/activityPadding">
+
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/createUserNameHint"
+    android:layout_marginTop="40dp"
+    android:id="@+id/makeUserNameEntry" />
+    android:inputType="textPersonName"
+
+  <EditText
+    android:inputType="number"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/createUserAgeHint"
+    android:layout_marginTop="20dp"
+    android:id="@+id/makeUserAgeEntry"
+    android:layout_below="@id/makeUserNameEntry" />
+
+  <EditText
+    android:inputType="textPostalAddress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/createUserAddressHint"
+    android:layout_marginTop="20dp"
+    android:id="@+id/makeUserAddressEntry"
+    android:layout_below="@id/makeUserAgeEntry" />
+
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/loginMenuPasswordHint"
+    android:layout_marginTop="20dp"
+    android:inputType="textPassword"
+    android:id="@+id/makeUserPassword"
+    android:layout_below="@id/makeUserAddressEntry" />
+
+  <Button
+    android:id="@+id/makeUserBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/createUserBtn"
+    android:layout_below="@id/makeUserPassword"
+    android:layout_marginTop="40dp"
+    android:layout_centerHorizontal="true"
+    app:icon="@drawable/ic_person_add_black_24dp" />
+</RelativeLayout>

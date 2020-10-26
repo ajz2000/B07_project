@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Activity.Admin.AdminLoadAppData"
+  android:padding="@dimen/activityPadding">
+
+  <TextView
+    android:id="@+id/loadAppDataPrompt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="15dp"
+    android:text="@string/saveAppDataPrompt"
+    android:textSize="@dimen/textViewTextSize" />
+
+  <EditText
+    android:id="@+id/loadAppDataEntry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="15dp"
+    android:layout_toRightOf="@id/loadAppDataPrompt"
+    android:hint="@string/saveAppDataHint"
+    android:inputType="textUri"
+    android:textSize="20dp" />
+
+  <Button
+    android:id="@+id/loadDataBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@id/loadAppDataEntry"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="-64dp"
+    android:text="@string/loadAppDataBtn"
+    app:icon="@drawable/ic_file_download_black_24dp" />
+
+</RelativeLayout>

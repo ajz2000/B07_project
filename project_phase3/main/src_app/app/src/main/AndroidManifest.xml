@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.example.cscb07_app">
+
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/appName"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity android:name=".Activity.Customer.CustomerLoadShoppingCart"></activity>
+    <activity android:name=".Activity.Customer.CustomerSaveShoppingCart" />
+    <activity android:name=".Activity.Admin.AdminCreateCoupon" />
+    <activity android:name=".Activity.Admin.AdminLoadAppData" />
+    <activity android:name=".Activity.Admin.AdminSaveAppData" />
+    <activity android:name=".Activity.Admin.AdminViewActiveAccounts" />
+    <activity android:name=".Activity.Admin.AdminViewHistoricAccounts" />
+    <activity android:name=".Activity.Admin.AdminPromoteEmployee" />
+    <activity android:name=".Activity.Admin.AdminMenu" />
+    <activity android:name=".Activity.Admin.AdminViewBooks" />
+    <activity android:name=".Activity.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".Activity.Customer.CustomerStore" />
+    <activity android:name=".Activity.Customer.CustomerCheckout" />
+    <activity android:name=".Activity.Initialization.InitializationPopUp" />
+    <activity android:name=".Activity.Initialization.InitializationCreateFirstAdmin" />
+    <activity android:name=".Activity.Initialization.InitializationCreateFirstEmployee" />
+    <activity android:name=".Activity.Employee.EmployeeAuthenticateEmployee" />
+    <activity android:name=".Activity.Employee.EmployeeMakeEmployee" />
+    <activity android:name=".Activity.Employee.EmployeeMakeAccount" />
+    <activity android:name=".Activity.Employee.EmployeeRestockInventory" />
+    <activity android:name=".Activity.Employee.EmployeeMakeUser" />
+    <activity android:name=".Activity.Employee.EmployeeMenu" />
+    <activity android:name=".Activity.Login.LoginMenu" />
+  </application>
+
+</manifest>

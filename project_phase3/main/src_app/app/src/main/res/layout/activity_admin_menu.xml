@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Activity.Admin.AdminMenu"
+  android:padding="@dimen/activityPadding">
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="@string/employeeMenuOptions"
+    android:textSize="@dimen/employeeMenuOptionsTextSize"
+    android:id="@+id/adminMenuTitle" />
+
+  <Button
+    android:id="@+id/adminMenuPromoteEmployee"
+    app:icon="@drawable/ic_supervisor_account_black_24dp"
+    android:layout_width="@dimen/adminMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/adminPromoteBtn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:layout_below="@id/adminMenuTitle" />
+
+  <Button
+    android:id="@+id/adminMenuHistoricAccounts"
+    android:layout_width="@dimen/adminMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/adminMenuViewHistoricAccounts"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    app:icon="@drawable/ic_account_balance_black_24dp"
+    android:layout_below="@id/adminMenuCreateCoupon" />
+
+  <Button
+    android:id="@+id/adminMenuActiveAccounts"
+    android:layout_width="@dimen/adminMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/adminMenuViewActiveAccounts"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    app:icon="@drawable/ic_account_balance_wallet_black_24dp"
+    android:layout_below="@id/adminMenuHistoricAccounts" />
+
+  <Button
+    android:id="@+id/adminMenuSaveData"
+    android:layout_width="@dimen/adminMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/adminMenuSaveData"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    app:icon="@drawable/ic_save_black_24dp"
+    android:layout_below="@id/adminMenuActiveAccounts" />
+
+  <Button
+    android:id="@+id/adminMenuLoadData"
+    android:layout_width="@dimen/adminMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/adminMenuLoadData"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    app:icon="@drawable/ic_file_download_black_24dp"
+    android:layout_below="@id/adminMenuSaveData" />
+
+  <Button
+    android:id="@+id/adminMenuCreateCoupon"
+    android:layout_width="@dimen/adminMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/adminMenuCreateCoupon"
+    android:layout_below="@id/adminMenuViewBooks"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    app:icon="@drawable/ic_local_offer_black_24dp" />
+
+  <Button
+    android:id="@+id/adminMenuViewBooks"
+    android:layout_width="@dimen/adminMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/viewBooksBtn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    app:icon="@drawable/ic_library_books_black_24dp"
+    android:layout_below="@id/adminMenuPromoteEmployee" />
+
+  <Button
+    android:id="@+id/adminMenuExitBtn"
+    android:layout_width="@dimen/adminMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/exitBtn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    app:icon="@drawable/ic_exit_to_app_black_24dp"
+    android:layout_below="@id/adminMenuLoadData" />
+</RelativeLayout>

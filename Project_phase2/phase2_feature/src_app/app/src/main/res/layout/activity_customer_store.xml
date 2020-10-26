@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".CustomerStore"
+  android:padding="@dimen/activityPadding">
+
+  <ScrollView
+    android:id="@+id/shoppingCartView"
+    android:layout_width="match_parent"
+    android:layout_height="580dp">
+
+    <LinearLayout
+      android:id="@+id/inventoryItems"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:id="@+id/singleItem1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+          android:id="@+id/exampleName1"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="exampleItem"
+          android:textSize="24sp" />
+
+        <TextView
+          android:id="@+id/exampleID1"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="ID: 12345678"
+          android:textSize="24sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/singleItem2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+          android:id="@+id/exampleName2"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="exampleItem"
+          android:textSize="24sp" />
+
+        <TextView
+          android:id="@+id/exampleID2"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_weight="1"
+          android:text="ID: 12345678"
+          android:textSize="24sp" />
+
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  <LinearLayout
+    android:id="@+id/middlePanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/bottomPanel"
+    android:layout_below="@id/shoppingCartView"
+    android:orientation="vertical">
+
+
+    <EditText
+      android:id="@+id/idOfProduct"
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1"
+      android:hint="@string/inputID"
+      android:inputType="number">
+
+
+    </EditText>
+
+    <EditText
+      android:id="@+id/amountOfProduct"
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1"
+      android:hint="@string/inputAmount"
+      android:inputType="number">
+
+    </EditText>
+
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:id="@+id/bottomPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/addToCart"
+      android:layout_width="0dip"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="@string/addToCart" />
+
+    <Button
+      android:id="@+id/viewCart"
+      android:layout_width="0dip"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="@string/viewCart" />
+
+    <Button
+      android:id="@+id/logout"
+      android:layout_width="0dip"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:text="@string/logout" />
+
+  </LinearLayout>
+
+</RelativeLayout>

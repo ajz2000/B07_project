@@ -1,0 +1,8 @@
+Our layouts can be found at: https://markus.utsc.utoronto.ca/svn/cscb07f19/group_0817/Project_phase2/main/src_app/app/src/main/res/layout/
+
+
+Our login menu is: activity_login_menu.xml
+Our layouts for the users view are: activity_customer_*.xml
+Our layouts for the employee's view are: acitivity_employee_*.xml
+Our layouts for the admins view is: activity_admin.xml
+Our layouts for the initialization are: activity_initialization_*.xml

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activityPadding"
+    tools:context=".EmployeeMenu">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="@string/employeeMenuOptions"
+    android:textSize="@dimen/employeeMenuOptionsTextSize"
+    android:id="@+id/employee_menu_title" />
+
+<Button
+    android:id="@+id/first_button"
+    android:layout_width="@dimen/employeeMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/authenticateBtn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="40dp"
+    android:layout_below="@id/employee_menu_title" />
+
+<Button
+    android:id="@+id/second_button"
+    android:layout_width="@dimen/employeeMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/employeeMenuNewUserBtn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/first_button" />
+
+<Button
+    android:id="@+id/third_button"
+    android:layout_width="@dimen/employeeMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/employeeMenuNewAccountBtn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/second_button" />
+
+<Button
+    android:id="@+id/fourth_button"
+    android:layout_width="@dimen/employeeMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/employeeMenuNewEmployeeBtn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/third_button" />
+
+<Button
+    android:id="@+id/fifth_button"
+    android:layout_width="@dimen/employeeMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/restockInventoryBtn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/fourth_button" />
+
+<Button
+    android:layout_width="@dimen/employeeMenuButtonWidth"
+    android:layout_height="wrap_content"
+    android:text="@string/exitBtn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/fifth_button" />
+</RelativeLayout>

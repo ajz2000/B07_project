@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Activity.Admin.AdminPromoteEmployee"
+  android:padding="@dimen/activityPadding">
+
+  <TextView
+    android:id="@+id/employeeIdPrompt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="15dp"
+    android:text="@string/adminPromotePrompt"
+    android:textSize="@dimen/textViewTextSize" />
+
+  <EditText
+    android:id="@+id/promoteEmployeeIdEntry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="15dp"
+    android:layout_toRightOf="@id/employeeIdPrompt"
+    android:hint="@string/adminPromoteHint"
+    android:inputType="number"
+    android:textSize="20dp" />
+
+  <Button
+    android:id="@+id/promoteEmployeeButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/promoteEmployeeIdEntry"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:text="@string/adminPromoteBtn"
+    app:icon="@drawable/ic_supervisor_account_black_24dp" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Activity.Admin.AdminViewActiveAccounts"
+  android:padding="@dimen/activityPadding">
+
+  <TextView
+    android:id="@+id/activeAccountsPrompt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="15dp"
+    android:text="@string/viewActiveAccountsPrompt"
+    android:textSize="@dimen/textViewTextSize" />
+
+  <EditText
+    android:id="@+id/activeAccountsCustomerIdEntry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="15dp"
+    android:layout_toRightOf="@id/activeAccountsPrompt"
+    android:hint="@string/userIdHint"
+    android:inputType="text"
+    android:textSize="20dp" />
+
+  <Button
+    android:id="@+id/viewActiveAccountsBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@id/activeAccountsCustomerIdEntry"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="-54dp"
+    android:text="@string/viewActiveAccountsBtn"
+    app:icon="@drawable/ic_account_balance_black_24dp" />
+
+
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="440dp"
+    android:layout_below="@id/viewActiveAccountsBtn"
+    android:layout_marginTop="80dp">
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <TextView
+        android:layout_below="@id/viewActiveAccountsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/textViewTextSize"
+        android:id="@+id/viewActiveAccountsText"
+        android:scrollbars="vertical" />
+    </ScrollView>
+  </RelativeLayout>
+
+</RelativeLayout>
